@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Welcome to Jekyll!</title>
-  <meta name="description" content="** 깃허브에 블로그 페이지 만들기 **">
+  <meta name="description" content="깃허브에 블로그 페이지 만들기jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다.[jekyll-docs]: http://jekyllrb.com/docs/home[jekyll-gh]:   https://github.com/jekyll/jekyll[jeky...">
 
   <link rel="stylesheet" href="/articles/css/main.css">
   <link rel="canonical" href="http://gitwoojohn.github.io/articles/articles/2016/">
@@ -62,19 +62,29 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>** 깃허브에 블로그 페이지 만들기 **</p>
+    <h1 id="section">깃허브에 블로그 페이지 만들기</h1>
+<pre>
+<code>
+jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다.
 
-<p>** jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다. **
-** 이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김. **
-    * 윈도우용 github 응용프로그램을 사용해서 해결.</p>
+이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김.
+    * 윈도우용 github 응용프로그램을 사용해서 해결.
+</code>
+</pre>
+<pre>
+<code>
+1. 깃허브 페이지에서 새로운 저장소(New Repository)를 만들고 클론 주소를 복사
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">1</span><span class="o">.</span> <span class="err">깃허브</span> <span class="err">페이지에서</span> <span class="err">새로운</span> <span class="err">저장소</span><span class="p">(</span><span class="no">New</span> <span class="no">Repository</span><span class="p">)</span><span class="err">를</span> <span class="err">만들고</span> <span class="err">클론</span> <span class="err">주소를</span> <span class="err">복사</span>
-<span class="mi">2</span><span class="o">.</span> <span class="err">윈도우</span> <span class="err">커맨드</span> <span class="err">프로픔트에서</span><span class="p">(</span><span class="err">원하는</span> <span class="err">장소에</span> <span class="err">미리</span> <span class="err">상위</span> <span class="err">폴더</span> <span class="err">만들어</span> <span class="err">놓고</span><span class="p">)</span> 
-   <span class="o">*</span> <span class="n">git</span> <span class="n">init</span>
-   <span class="o">*</span> <span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="err">클론</span><span class="no">URL</span>
-   <span class="o">*</span> <span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">orphan</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span> <span class="p">(</span> <span class="o">--</span><span class="n">orphan</span>  <span class="n">master</span><span class="err">없는</span> <span class="err">저장소로</span> <span class="err">변경</span> <span class="p">)</span>
-<span class="mi">3</span><span class="o">.</span> <span class="err">윈도우용</span> <span class="no">GitHub</span> <span class="err">프로그램으로</span> <span class="err">클론한</span> <span class="err">장소를</span> <span class="err">추가</span> <span class="err">하고</span> <span class="err">커멘트</span> <span class="err">써주고</span> <span class="err">커밋</span> 
-   <span class="o">-</span> <span class="n">publish</span><span class="p">(</span><span class="err">처음에만</span><span class="p">)</span> <span class="err">하거나</span> <span class="n">sync</span> <span class="err">해주면</span> <span class="err">끝</span></code></pre></figure>
+2. 윈도우 커맨드 프로픔트에서(원하는 장소에 미리 상위 폴더 만들어 놓고) 
+   * git init
+   * git remote add origin 클론URL
+   * git checkout --orphan gh-pages ( --orphan  master없는 저장소로 변경 )
+
+3. 윈도우용 GitHub 프로그램으로 클론한 장소를 추가 하고 코멘트 써주고 커밋 
+   - publish(처음에만) 하거나 sync 해주면 끝
+</code>
+</pre>
+<p><a href="https://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/">참고 홈페이지</a></p>
 
 <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
