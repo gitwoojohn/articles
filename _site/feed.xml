@@ -6,13 +6,27 @@
 </description>
     <link>http://gitwoojohn.github.io/articles/articles/</link>
     <atom:link href="http://gitwoojohn.github.io/articles/articles/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 11:12:14 +0900</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 11:12:14 +0900</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2016 11:30:51 +0900</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 11:30:51 +0900</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <description>&lt;p&gt;** 깃허브에 블로그 페이지 만들기 **&lt;/p&gt;
+
+&lt;p&gt;** jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다. **
+** 이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김. **
+    * 윈도우용 github 응용프로그램을 사용해서 해결.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;깃허브&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;페이지에서&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;새로운&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;저장소&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;New&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Repository&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;를&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;만들고&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클론&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;주소를&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;복사&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;윈도우&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;커맨드&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;프로픔트에서&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;원하는&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;장소에&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;미리&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;상위&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;폴더&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;만들어&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;놓고&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+   &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클론&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;URL&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checkout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orphan&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pages&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orphan&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;없는&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;저장소로&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;변경&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;윈도우용&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitHub&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;프로그램으로&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클론한&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;장소를&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;추가&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;하고&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;커멘트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;써주고&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;커밋&lt;/span&gt; 
+   &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;publish&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;처음에만&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;하거나&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sync&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;해주면&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;끝&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <meta name="description" content="** 깃허브에 블로그 페이지 만들기 **">
 
   <link rel="stylesheet" href="/articles/css/main.css">
   <link rel="canonical" href="http://gitwoojohn.github.io/articles/articles/2016/">
@@ -62,7 +62,21 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p>** 깃허브에 블로그 페이지 만들기 **</p>
+
+<p>** jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다. **
+** 이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김. **
+    * 윈도우용 github 응용프로그램을 사용해서 해결.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">1</span><span class="o">.</span> <span class="err">깃허브</span> <span class="err">페이지에서</span> <span class="err">새로운</span> <span class="err">저장소</span><span class="p">(</span><span class="no">New</span> <span class="no">Repository</span><span class="p">)</span><span class="err">를</span> <span class="err">만들고</span> <span class="err">클론</span> <span class="err">주소를</span> <span class="err">복사</span>
+<span class="mi">2</span><span class="o">.</span> <span class="err">윈도우</span> <span class="err">커맨드</span> <span class="err">프로픔트에서</span><span class="p">(</span><span class="err">원하는</span> <span class="err">장소에</span> <span class="err">미리</span> <span class="err">상위</span> <span class="err">폴더</span> <span class="err">만들어</span> <span class="err">놓고</span><span class="p">)</span> 
+   <span class="o">*</span> <span class="n">git</span> <span class="n">init</span>
+   <span class="o">*</span> <span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="err">클론</span><span class="no">URL</span>
+   <span class="o">*</span> <span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">orphan</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span> <span class="p">(</span> <span class="o">--</span><span class="n">orphan</span>  <span class="n">master</span><span class="err">없는</span> <span class="err">저장소로</span> <span class="err">변경</span> <span class="p">)</span>
+<span class="mi">3</span><span class="o">.</span> <span class="err">윈도우용</span> <span class="no">GitHub</span> <span class="err">프로그램으로</span> <span class="err">클론한</span> <span class="err">장소를</span> <span class="err">추가</span> <span class="err">하고</span> <span class="err">커멘트</span> <span class="err">써주고</span> <span class="err">커밋</span> 
+   <span class="o">-</span> <span class="n">publish</span><span class="p">(</span><span class="err">처음에만</span><span class="p">)</span> <span class="err">하거나</span> <span class="n">sync</span> <span class="err">해주면</span> <span class="err">끝</span></code></pre></figure>
+
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
