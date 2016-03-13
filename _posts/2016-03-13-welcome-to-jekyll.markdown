@@ -17,7 +17,7 @@ categories: jekyll update
    * git init
    * git remote add origin 클론URL
    * git checkout --orphan gh-pages ( --orphan  master없는 저장소로 변경 )
-3. 윈도우용 GitHub 프로그램으로 클론한 장소를 추가 하고 커멘트 써주고 커밋 
+3. 윈도우용 GitHub 프로그램으로 클론한 장소를 추가 하고 코멘트 써주고 커밋 
    - publish(처음에만) 하거나 sync 해주면 끝
 {% endhighlight %}
 
