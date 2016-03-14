@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 
   {% include head.html %}
-
+<!--
   <body>
 
     {% include header.html %}
@@ -16,5 +16,14 @@
     {% include footer.html %}
 
   </body>
+-->
+  <body class="wrapper">
 
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
 </html>

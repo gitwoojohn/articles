@@ -1,40 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>GitHub Blog Page</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://gitwoojohn.github.io/articles/articles/</link>
-    <atom:link href="http://gitwoojohn.github.io/articles/articles/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 11:42:10 +0900</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 11:42:10 +0900</lastBuildDate>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 14 Mar 2016 19:38:56 +0900</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 19:38:56 +0900</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;깃허브에 블로그 페이지 만들기&lt;/h1&gt;
-&lt;pre&gt;
-&lt;code&gt;
-jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다.
+        <title>Welcome to Jekyll!!!</title>
+        <description>&lt;p&gt;깃허브에 블로그 페이지 만들기&lt;/p&gt;
 
-이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김.
-    * 윈도우용 github 응용프로그램을 사용해서 해결.
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;pre&gt;
-&lt;code&gt;
-1. 깃허브 페이지에서 새로운 저장소(New Repository)를 만들고 클론 주소를 복사
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
+&lt;span class=&quot;c&quot;&gt;# =&amp;gt; ./_site 에 현재 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
 
-2. 윈도우 커맨드 프로픔트에서(원하는 장소에 미리 상위 폴더 만들어 놓고) 
-   * git init
-   * git remote add origin 클론URL
-   * git checkout --orphan gh-pages ( --orphan  master없는 저장소로 변경 )
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
+&lt;span class=&quot;c&quot;&gt;# =&amp;gt; &amp;lt;destination&amp;gt; 에 현재 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
 
-3. 윈도우용 GitHub 프로그램으로 클론한 장소를 추가 하고 코멘트 써주고 커밋 
-   - publish(처음에만) 하거나 sync 해주면 끝
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&quot;https://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/&quot;&gt;참고 홈페이지&lt;/a&gt;&lt;/p&gt;
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
+&lt;span class=&quot;c&quot;&gt;# =&amp;gt; &amp;lt;destination&amp;gt; 에 &amp;lt;source&amp;gt; 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
+
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
+&lt;span class=&quot;c&quot;&gt;# =&amp;gt; ./_site 에 현재 폴더의 내용으로 사이트를 생성하고,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#    변경사항을 감지하면 자동으로 다시 생성합니다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한다.&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 이중 보안(2 Factor)을 사용하면 윈도우 커맨드 라인에서 인증 에러 생김.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#    * 윈도우용 github 응용프로그램을 사용해서 해결.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. 깃허브 페이지에서 새로운 저장소(New Repository)를 만들고 클론 주소를 복사&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. 윈도우 커맨드 프롬프트에서(원하는 장소에 미리 상위 폴더 만들어 놓고)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* git init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* git remote add origin 클론URL&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* git checkout --orphan gh-pages ( --orphan  master없는 저장소로 변경 )&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3. 윈도우용 GitHub 프로그램으로 클론한 장소를 추가 하고 코멘트 써주고 커밋&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* publish(처음에만) 하거나 sync 해주면 끝&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/&quot;&gt;참고홈페이지&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;
+  &lt;h5&gt;ProTip™: 한글(cp949) 프롬프트에서 테스트시&lt;/h5&gt;
+  &lt;p&gt;
+    커맨드 프롬프트에서 UTF-8 코드 페이지로 변경 해야 하는데 변경 방법은
+    &lt;br /&gt;` chcp 65001 ` 로 입력하면 UTF-8 코드페이지로 변경.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;
+  &lt;h5&gt;페이지 나누기는 오직 HTML 파일에서만 작동합니다&lt;/h5&gt;
+  &lt;p&gt;
+    페이지 나누기는 Markdown 이나 Textile 파일에서는 작동하지 않습니다. 오직
+    HTML 파일 안에서 사용될 때에만 작동합니다. 보통 이 기능은 포스트 목록에
+    사용하기 때문에, 큰 문제가 되지는 않을 것입니다.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note warning&quot;&gt;
+  &lt;h5&gt;첫 페이지 경계조건을 주의하세요&lt;/h5&gt;
+  &lt;p&gt;
+    Jekyll 은 &#39;page1&#39; 폴더를 생성하지 않기 때문에, 위 코드는 ` /page1 `
+    링크에 대하여 올바르게 작동하지 않습니다. 만약 이것이 문제가 된다면 아래의
+    방법을 참고하세요.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note unreleased&quot;&gt;
+  &lt;h5&gt;이 표시는 아직 릴리스 되지 않는 기능을 가리킵니다&lt;/h5&gt;
+  &lt;p&gt;이 웹사이트는 아직 릴리스 되지 않는 버전에 대한 내용도 일부 포함하고
+    있습니다.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hey, folks! Bunch of bug fixes here. Notables:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Only superdirectories of &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; will be categories.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;:title&lt;/code&gt; in permalink templates are now properly cased as before&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.jekyll-metadata&lt;/code&gt; being erroneously written when not using incremental build.&lt;/li&gt;
+  &lt;li&gt;Failure in liquid will now always fail the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; process.&lt;/li&gt;
+  &lt;li&gt;All hooks should now be properly registered &amp;amp; documented&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And a bunch more changes which you can see over in the
+&lt;a href=&quot;/docs/history&quot;&gt;changelog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -52,8 +109,8 @@ jekyll의 렌더링된 결과를 만들기 위해서 gh-pages에 push 해야한�
 
 </description>
         <pubDate>Sun, 13 Mar 2016 10:43:23 +0900</pubDate>
-        <link>http://gitwoojohn.github.io/articles/articles/2016/</link>
-        <guid isPermaLink="true">http://gitwoojohn.github.io/articles/articles/2016/</guid>
+        <link>http://yourdomain.com/2016/</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/</guid>
         
         
         <category>jekyll</category>
