@@ -9,16 +9,16 @@ categories: jekyll update
 깃허브에 블로그 페이지 만들기
 
 {% highlight bash %}
-$ jekyll build
+~ $ jekyll build
 # => ./_site 에 현재 폴더의 내용으로 사이트를 생성합니다
 
-$ jekyll build --destination <destination>
+~ $ jekyll build --destination <destination>
 # => <destination> 에 현재 폴더의 내용으로 사이트를 생성합니다
 
-$ jekyll build --source <source> --destination <destination>
+~ $ jekyll build --source <source> --destination <destination>
 # => <destination> 에 <source> 폴더의 내용으로 사이트를 생성합니다
 
-$ jekyll build --watch
+~ $ jekyll build --watch
 # => ./_site 에 현재 폴더의 내용으로 사이트를 생성하고,
 #    변경사항을 감지하면 자동으로 다시 생성합니다.
 {% endhighlight %}

@@ -6,24 +6,24 @@
 </description>
     <link>http://gitwoojohn.github.io//articles/</link>
     <atom:link href="http://gitwoojohn.github.io//articles/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Mar 2016 19:52:03 +0900</pubDate>
-    <lastBuildDate>Mon, 14 Mar 2016 19:52:03 +0900</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 20:30:46 +0900</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 20:30:46 +0900</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Welcome to Jekyll!!!</title>
         <description>&lt;p&gt;깃허브에 블로그 페이지 만들기&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll build
 &lt;span class=&quot;c&quot;&gt;# =&amp;gt; ./_site 에 현재 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
 
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
 &lt;span class=&quot;c&quot;&gt;# =&amp;gt; &amp;lt;destination&amp;gt; 에 현재 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
 
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
 &lt;span class=&quot;c&quot;&gt;# =&amp;gt; &amp;lt;destination&amp;gt; 에 &amp;lt;source&amp;gt; 폴더의 내용으로 사이트를 생성합니다&lt;/span&gt;
 
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll build --watch
 &lt;span class=&quot;c&quot;&gt;# =&amp;gt; ./_site 에 현재 폴더의 내용으로 사이트를 생성하고,&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#    변경사항을 감지하면 자동으로 다시 생성합니다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
