@@ -5,7 +5,6 @@ title:  "Welcome to Jekyll!!!"
 date:   2016-03-13 10:43:23 +0900
 categories: jekyll update
 ---
-
 깃허브에 블로그 페이지 만들기
 
 {% highlight bash %}
